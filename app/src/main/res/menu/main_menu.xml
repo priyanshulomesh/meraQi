@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/complaints"
+            android:icon="@drawable/ic_baseline_error_24"
+            android:title="Complaints"></item>
+        <item android:id="@+id/employee_db"
+            android:title="Employee Information"
+            android:icon="@drawable/ic_baseline_info_24">
+        </item>
+        <item android:id="@+id/schedule"
+            android:title="Your on-site schedules"
+            android:icon="@drawable/ic_baseline_schedule_24">
+        </item>
+        <item android:id="@+id/personal_info"
+            android:title="Your details"
+            android:icon="@drawable/ic_baseline_person_pin_24">
+        </item>
+    </group>
+
+</menu>

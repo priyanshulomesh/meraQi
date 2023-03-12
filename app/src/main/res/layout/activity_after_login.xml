@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".afterLogin">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/titleLayoutAfterLogin"
+          android:layout_width="396dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.666"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <TextView
+             android:id="@+id/titleText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:backgroundTint="#E73535"
+             android:text="Complaints"
+             android:textColor="#E73535"
+             android:textSize="24sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <EditText
+             android:id="@+id/searchBar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="12dp"
+             android:ems="10"
+             android:hint="search(leave,abuse,apprecition,etc.)"
+             android:inputType="textPersonName"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toStartOf="@+id/search_button"
+             app:layout_constraintHorizontal_bias="0.75"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/titleText"
+             app:layout_constraintVertical_bias="0.0" />
+
+         <ImageView
+             android:id="@+id/search_button"
+             android:layout_width="45dp"
+             android:layout_height="45dp"
+             android:layout_marginEnd="16dp"
+             android:backgroundTint="#FFFFFF"
+             android:tint="#E73535"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:srcCompat="@drawable/ic_baseline_search_24" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/updateLayoutAfterLogin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingVertical="7dp">
+
+         <TextView
+             android:id="@+id/textView5"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Your Details"
+             android:textColor="#E73535"
+             android:textSize="24sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+   <com.google.android.material.navigation.NavigationView
+       android:id="@+id/NavView"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_gravity="start"
+       android:fitsSystemWindows="true"
+       app:headerLayout="@layout/header_menu"
+       app:menu="@menu/main_menu"></com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

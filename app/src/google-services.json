@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963950020198",
+    "project_id": "meraqi-d2243",
+    "storage_bucket": "meraqi-d2243.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963950020198:android:2b5d86ffb19c3e2d3a8fa7",
+        "android_client_info": {
+          "package_name": "com.originals.meraqi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963950020198-19hjuqjl4kgb776s0utlr8148jgqkr9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRyGKlpCwb1YLgtjUJDEqmIC53nQt0c2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963950020198-19hjuqjl4kgb776s0utlr8148jgqkr9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
